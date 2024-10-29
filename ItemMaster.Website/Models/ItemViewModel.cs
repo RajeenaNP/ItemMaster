@@ -16,12 +16,12 @@ namespace ItemMaster.Website.Models
 
         [Required(ErrorMessage = "Name Required")]
         public string Name { get; set; }
-       
+
 
         [RegularExpression(@"^[0-9]+$", ErrorMessage = "Only Numeric")]
         public decimal Price { get; set; }
 
-       
+
         public string Description { get; set; }
     }
 }
